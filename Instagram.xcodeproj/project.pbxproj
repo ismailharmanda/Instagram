@@ -14,6 +14,10 @@
 		ECE77E232AF85459008FB029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE77E212AF85459008FB029 /* Main.storyboard */; };
 		ECE77E252AF8545A008FB029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECE77E242AF8545A008FB029 /* Assets.xcassets */; };
 		ECE77E282AF8545A008FB029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE77E262AF8545A008FB029 /* LaunchScreen.storyboard */; };
+		ECE77E302AFA85E3008FB029 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECE77E2F2AFA85E3008FB029 /* GoogleService-Info.plist */; };
+		ECE77E322AFAE9EF008FB029 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE77E312AFAE9EF008FB029 /* FeedViewController.swift */; };
+		ECE77E342AFAEA08008FB029 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE77E332AFAEA08008FB029 /* UploadViewController.swift */; };
+		ECE77E362AFAEA14008FB029 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE77E352AFAEA14008FB029 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		ECE77E242AF8545A008FB029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECE77E272AF8545A008FB029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECE77E292AF8545A008FB029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE77E2F2AFA85E3008FB029 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECE77E312AFAE9EF008FB029 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		ECE77E332AFAEA08008FB029 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		ECE77E352AFAEA14008FB029 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +88,13 @@
 		ECE77E1A2AF85459008FB029 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				ECE77E2F2AFA85E3008FB029 /* GoogleService-Info.plist */,
 				ECE77E1B2AF85459008FB029 /* AppDelegate.swift */,
 				ECE77E1D2AF85459008FB029 /* SceneDelegate.swift */,
 				ECE77E1F2AF85459008FB029 /* ViewController.swift */,
+				ECE77E312AFAE9EF008FB029 /* FeedViewController.swift */,
+				ECE77E332AFAEA08008FB029 /* UploadViewController.swift */,
+				ECE77E352AFAEA14008FB029 /* SettingsViewController.swift */,
 				ECE77E212AF85459008FB029 /* Main.storyboard */,
 				ECE77E242AF8545A008FB029 /* Assets.xcassets */,
 				ECE77E262AF8545A008FB029 /* LaunchScreen.storyboard */,
@@ -152,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECE77E282AF8545A008FB029 /* LaunchScreen.storyboard in Resources */,
+				ECE77E302AFA85E3008FB029 /* GoogleService-Info.plist in Resources */,
 				ECE77E252AF8545A008FB029 /* Assets.xcassets in Resources */,
 				ECE77E232AF85459008FB029 /* Main.storyboard in Resources */,
 			);
@@ -207,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECE77E202AF85459008FB029 /* ViewController.swift in Sources */,
+				ECE77E342AFAEA08008FB029 /* UploadViewController.swift in Sources */,
 				ECE77E1C2AF85459008FB029 /* AppDelegate.swift in Sources */,
+				ECE77E322AFAE9EF008FB029 /* FeedViewController.swift in Sources */,
 				ECE77E1E2AF85459008FB029 /* SceneDelegate.swift in Sources */,
+				ECE77E362AFAEA14008FB029 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
