@@ -22,7 +22,16 @@ class ViewController: UIViewController {
 
 
     @IBAction func onPressSignIn(_ sender: UIButton) {
-        performSegue(withIdentifier: "toTabBarVC", sender: nil)
+        
+        let auth = Auth.auth()
+        
+        auth.signIn(withEmail: emailText.text ?? "", password: passwordTextField.text ?? "") { result, error in
+            if error != nil {
+                self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
+            } else{
+                self.performSegue(withIdentifier: "toTabBarVC", sender: nil)
+            }
+        }
     }
     
     
