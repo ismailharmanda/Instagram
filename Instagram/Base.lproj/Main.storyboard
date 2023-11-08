@@ -73,7 +73,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="ftO-AU-133">
             <objects>
-                <tabBarController id="2s2-XB-3Ew" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="2s2-XB-3Ew" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="YI8-ip-I3Z"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UUH-Eb-dzL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -93,7 +93,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="auth" id="BYZ-38-t0r" customClass="ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
