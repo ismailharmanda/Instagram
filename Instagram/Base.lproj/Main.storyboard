@@ -15,14 +15,40 @@
                     <view key="view" contentMode="scaleToFill" id="a8W-DJ-BAs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plus.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ggg-95-1jr">
+                                <rect key="frame" x="16" y="111" width="361" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdH-iD-RT7">
+                                <rect key="frame" x="16" y="613" width="361" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                <connections>
+                                    <action selector="onPressSave:" destination="drb-Yh-KPs" eventType="touchUpInside" id="TEW-XX-uXy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S9S-Se-bj0">
+                                <rect key="frame" x="16" y="379" width="361" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="HNd-ln-vn8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="LaZ-uW-daG"/>
+                    <connections>
+                        <outlet property="imageView" destination="ggg-95-1jr" id="ZFf-xv-Veh"/>
+                        <outlet property="saveButton" destination="AdH-iD-RT7" id="LGi-QZ-nyp"/>
+                        <outlet property="textView" destination="S9S-Se-bj0" id="hVr-Uv-OBF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mOa-n0-rlw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-622" y="442"/>
+            <point key="canvasLocation" x="-622.13740458015263" y="441.54929577464793"/>
         </scene>
         <!--Settings-->
         <scene sceneID="GH6-qo-oNj">
@@ -154,6 +180,7 @@
     <resources>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
         <image name="gear.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="plus.viewfinder" catalog="system" width="128" height="115"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
