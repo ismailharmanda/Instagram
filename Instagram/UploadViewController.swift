@@ -61,7 +61,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
             
             let uuid = UUID().uuidString
             
-            let imageReference = mediaFolder.child(uuid)
+            let imageReference = mediaFolder.child("\(uuid).jpg")
             imageReference.putData(data) { metaData, error in
                 if error != nil {
                     print(error?.localizedDescription)
