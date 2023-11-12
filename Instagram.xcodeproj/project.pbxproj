@@ -19,6 +19,7 @@
 		ECE77E342AFAEA08008FB029 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE77E332AFAEA08008FB029 /* UploadViewController.swift */; };
 		ECE77E362AFAEA14008FB029 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE77E352AFAEA14008FB029 /* SettingsViewController.swift */; };
 		ECF236622B0161C40060C04A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF236612B0161C40060C04A /* FeedCell.swift */; };
+		ECF236642B016EC90060C04A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF236632B016EC90060C04A /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		ECE77E332AFAEA08008FB029 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		ECE77E352AFAEA14008FB029 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		ECF236612B0161C40060C04A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		ECF236632B016EC90060C04A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				ECE77E262AF8545A008FB029 /* LaunchScreen.storyboard */,
 				ECE77E292AF8545A008FB029 /* Info.plist */,
 				ECF236612B0161C40060C04A /* FeedCell.swift */,
+				ECF236632B016EC90060C04A /* Post.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				ECF236622B0161C40060C04A /* FeedCell.swift in Sources */,
 				ECE77E202AF85459008FB029 /* ViewController.swift in Sources */,
 				ECE77E342AFAEA08008FB029 /* UploadViewController.swift in Sources */,
+				ECF236642B016EC90060C04A /* Post.swift in Sources */,
 				ECE77E1C2AF85459008FB029 /* AppDelegate.swift in Sources */,
 				ECE77E322AFAE9EF008FB029 /* FeedViewController.swift in Sources */,
 				ECE77E1E2AF85459008FB029 /* SceneDelegate.swift in Sources */,
