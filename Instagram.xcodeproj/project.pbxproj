@@ -18,6 +18,7 @@
 		ECE77E322AFAE9EF008FB029 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE77E312AFAE9EF008FB029 /* FeedViewController.swift */; };
 		ECE77E342AFAEA08008FB029 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE77E332AFAEA08008FB029 /* UploadViewController.swift */; };
 		ECE77E362AFAEA14008FB029 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE77E352AFAEA14008FB029 /* SettingsViewController.swift */; };
+		ECF236622B0161C40060C04A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF236612B0161C40060C04A /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		ECE77E312AFAE9EF008FB029 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		ECE77E332AFAEA08008FB029 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		ECE77E352AFAEA14008FB029 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		ECF236612B0161C40060C04A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				ECE77E242AF8545A008FB029 /* Assets.xcassets */,
 				ECE77E262AF8545A008FB029 /* LaunchScreen.storyboard */,
 				ECE77E292AF8545A008FB029 /* Info.plist */,
+				ECF236612B0161C40060C04A /* FeedCell.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF236622B0161C40060C04A /* FeedCell.swift in Sources */,
 				ECE77E202AF85459008FB029 /* ViewController.swift in Sources */,
 				ECE77E342AFAEA08008FB029 /* UploadViewController.swift in Sources */,
 				ECE77E1C2AF85459008FB029 /* AppDelegate.swift in Sources */,
