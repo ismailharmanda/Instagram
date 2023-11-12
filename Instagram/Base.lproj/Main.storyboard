@@ -88,14 +88,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XvB-eh-qrt">
-                                <rect key="frame" x="0.0" y="50" width="393" height="753"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XvB-eh-qrt">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="803"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="379" id="IeE-jv-Iq5" customClass="FeedCell" customModule="Instagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="379" id="IeE-jv-Iq5" customClass="FeedCell" customModule="Instagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="379"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IeE-jv-Iq5" id="A5P-Ay-qVS">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IeE-jv-Iq5" id="A5P-Ay-qVS">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="379"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -148,10 +148,10 @@
                         <viewLayoutGuide key="safeArea" id="v8b-4B-85Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="v8b-4B-85Y" firstAttribute="bottom" secondItem="XvB-eh-qrt" secondAttribute="bottom" id="BHV-Vw-juA"/>
-                            <constraint firstItem="XvB-eh-qrt" firstAttribute="leading" secondItem="v8b-4B-85Y" secondAttribute="leading" id="b3Q-vK-OVg"/>
-                            <constraint firstItem="v8b-4B-85Y" firstAttribute="trailing" secondItem="XvB-eh-qrt" secondAttribute="trailing" id="mT9-Ej-QVk"/>
-                            <constraint firstItem="XvB-eh-qrt" firstAttribute="top" secondItem="v8b-4B-85Y" secondAttribute="top" id="rdo-TH-2dW"/>
+                            <constraint firstAttribute="trailing" secondItem="XvB-eh-qrt" secondAttribute="trailing" id="AOx-mg-PGM"/>
+                            <constraint firstItem="XvB-eh-qrt" firstAttribute="leading" secondItem="7on-ui-Pee" secondAttribute="leading" id="G5n-Eh-L1r"/>
+                            <constraint firstItem="XvB-eh-qrt" firstAttribute="bottom" secondItem="v8b-4B-85Y" secondAttribute="bottom" id="fpL-6J-Njr"/>
+                            <constraint firstItem="XvB-eh-qrt" firstAttribute="top" secondItem="v8b-4B-85Y" secondAttribute="top" id="htP-KY-IPE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="f.circle.fill" catalog="system" id="ysA-wI-hwF"/>
