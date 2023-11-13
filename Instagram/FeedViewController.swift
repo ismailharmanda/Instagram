@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseFirestore
+import SDWebImage
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var posts = [Post]()
@@ -23,13 +24,15 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.userCommentLabel.text = posts[indexPath.row].comment
         cell.userImageView.image = UIImage(named: posts[indexPath.row].image)
         if let url = URL(string: posts[indexPath.row].image) {
-            URLSession.shared.dataTask(with: url) { data, response, error in
-                if let data = data {
-                    DispatchQueue.main.async {
-                        cell.userImageView.image = UIImage(data: data)
-                    }
-                }
-            }.resume()}
+//            URLSession.shared.dataTask(with: url) { data, response, error in
+//                if let data = data {
+//                    DispatchQueue.main.async {
+//                        cell.userImageView.image = UIImage(data: data)
+//                    }
+//                }
+//            }.resume()
+            cell.userImageView.sd_setImage(with: url)
+        }
         
         return cell
         
