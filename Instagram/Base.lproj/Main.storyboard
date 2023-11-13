@@ -133,9 +133,17 @@
                                                         <action selector="onPressLike:" destination="IeE-jv-Iq5" eventType="touchUpInside" id="V12-df-cLD"/>
                                                     </connections>
                                                 </button>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDi-UR-GZ5">
+                                                    <rect key="frame" x="331" y="16" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="documentIdLabel" destination="JDi-UR-GZ5" id="QfT-tn-S2n"/>
                                             <outlet property="likeLabel" destination="dnh-RZ-2LL" id="iQo-Nv-hEo"/>
                                             <outlet property="userCommentLabel" destination="XUd-5R-C9l" id="WOK-CV-ico"/>
                                             <outlet property="userEmailLabel" destination="hVz-Ne-G0K" id="HOt-5z-7dA"/>

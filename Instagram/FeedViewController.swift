@@ -23,6 +23,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.likeLabel.text = String(posts[indexPath.row].like)
         cell.userCommentLabel.text = posts[indexPath.row].comment
         cell.userImageView.image = UIImage(named: posts[indexPath.row].image)
+        cell.documentIdLabel.text = posts[indexPath.row].id
         if let url = URL(string: posts[indexPath.row].image) {
 //            URLSession.shared.dataTask(with: url) { data, response, error in
 //                if let data = data {
@@ -56,7 +57,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                     for document in snapshot!.documents{
                         let documentId = document.documentID
                         let documentData = document.data()
-                        let post = Post(email: document["postedBy"] as! String, comment: document["postComment"] as! String, like: document["likes"] as! Int, image: document["imageUrl"] as! String)
+                        let post = Post(email: document["postedBy"] as! String, comment: document["postComment"] as! String, like: document["likes"] as! Int, image: document["imageUrl"] as! String, id: documentId
+                        )
                         self.posts.append(post)
                         
                         
