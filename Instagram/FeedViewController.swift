@@ -46,11 +46,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let firestoreDatabase = Firestore.firestore()
         
-        firestoreDatabase.collection("Posts").addSnapshotListener { snapshot, error in
+        firestoreDatabase.collection("Posts").order(by: "date", descending: true).addSnapshotListener { snapshot, error in
             if error != nil {
                 print(error)
             } else {
                 if snapshot?.isEmpty != true{
+                    
+                    self.posts.removeAll(keepingCapacity: false)
                     for document in snapshot!.documents{
                         let documentId = document.documentID
                         let documentData = document.data()
