@@ -12,5 +12,7 @@ target 'Instagram' do
 	pod 'FirebaseAuth'
 	pod 'FirebaseFirestore'
 	pod 'FirebaseStorage'
+	
+	pod 'SDWebImage', :modular_headers => true
 
 end
